@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Тесты/покрытие/кэши инструментов
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Локальные артефакты разработки
+.claude/
+graphify-out/
+
+# Секреты и данные (НИКОГДА не коммитить)
+.env
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# Локальные файлы с секретами (удалить после загрузки в SQLite)
+temp_linkapp_keys.txt
+temp_info.txt
+temp_*.txt
+*_keys.txt

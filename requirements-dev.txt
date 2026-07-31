@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest==9.1.1
+pytest-cov==7.1.0
+pytest-httpx==0.36.2   # мок httpx для тестов LinkedIn/Telegram (Фазы 2–5)
+mypy==2.3.0

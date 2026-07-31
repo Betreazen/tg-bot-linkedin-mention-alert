@@ -1,0 +1,12 @@
+services:
+  linkedin-mentions-bot:
+    build: .
+    env_file: .env
+    volumes:
+      - ./data:/data          # SQLite (токены + дедуп + курсор) переживает рестарт
+    restart: unless-stopped
+    logging:                  # логи не должны съесть диск за месяцы работы
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

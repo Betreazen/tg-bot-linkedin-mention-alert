@@ -1,0 +1,4 @@
+# Runtime-зависимости бота — точные пины: воспроизводимая сборка Docker-образа
+httpx==0.28.1
+python-dotenv==1.2.2
+tzdata==2026.3   # IANA tz-база для zoneinfo на Windows/slim-образах
