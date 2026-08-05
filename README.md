@@ -120,9 +120,3 @@ python -m venv .venv
 
 Внешние вызовы (LinkedIn, Telegram) замоканы через `httpx.MockTransport` — тесты не ходят
 в сеть. Покрытие включает `main.py` и `setup_auth.py`.
-
-## Статус
-
-Логика v1 готова и укреплена по итогам код-ревью (см. PROGRESS.md, 2026-07-31):
-160 тестов, покрытие 98%, mypy чистый. Финальная валидация пагинации и формы ответа
-`organizationalEntityNotifications` — на живых токенах.
