@@ -1,5 +1,9 @@
 services:
   linkedin-mentions-bot:
+    mem_limit: 400m
+    environment:
+      # glibc резервирует память про запас на каждый поток Python; 2 арены заметно снижают аппетит.
+      MALLOC_ARENA_MAX: "2"
     build: .
     env_file: .env
     volumes:
