@@ -120,3 +120,7 @@ python -m venv .venv
 
 Внешние вызовы (LinkedIn, Telegram) замоканы через `httpx.MockTransport` — тесты не ходят
 в сеть. Покрытие включает `main.py` и `setup_auth.py`.
+
+## Operations
+
+See [deployment, resource limits and rollback](OPERATIONS.md).
