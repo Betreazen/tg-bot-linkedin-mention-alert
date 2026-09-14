@@ -6,8 +6,8 @@ RUN useradd --uid 10001 --create-home appuser
 WORKDIR /app
 
 # Сначала зависимости — кэш слоёв не инвалидируется при правках кода
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements.lock .
+RUN pip install --no-cache-dir --require-hashes -r requirements.lock
 
 COPY src ./src
 COPY main.py setup_auth.py ./

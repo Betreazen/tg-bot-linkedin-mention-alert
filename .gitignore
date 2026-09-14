@@ -27,3 +27,15 @@ temp_linkapp_keys.txt
 temp_info.txt
 temp_*.txt
 *_keys.txt
+
+# Local secrets, tooling and generated artifacts
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.bak
+.qoder/
+.venv/
+.ruff_cache/
+.mypy_cache/
